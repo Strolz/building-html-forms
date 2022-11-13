@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Form Practice</title>
+            <link rel="stylesheet" href="newform.css">
+        </head>
+        <body>
+            <h1>Favorite Programming Language</h1>
+            <form action="/form-handlining-url" method="post">
+                <fieldset>
+                    <legend>Add User</legend>
+
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
+
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status_name" id="status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>
+                            Choose your favorite programming language
+                        </p>
+                        <label for="html">HTML</label>
+                        <input type="radio" name="html" id="html">
+
+                        <label for="css">CSS</label>
+                        <input type="radio" name="css" id="css">
+
+                        <label for="javascript">JAVASCRIPT</label>
+                        <input type="radio" name="javascript" id="javascript">
+                    </div>
+
+                    <div>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="date">Today's Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div>
+                        <label for="news">Sign up for our Newsletter!</label>
+                        <input type="checkbox" id="news" name="news_letter">
+                    </div>
+
+                    <div>
+                        <label for="terms">Agree to our Terms</label>
+                        <input type="checkbox" name="terms" id="terms_agreements">
+                    </div>
+
+                </fieldset>
+            </form>
+        </body>
+</html>
